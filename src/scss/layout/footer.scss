@@ -1,0 +1,275 @@
+@import '../bootstrapping/mixins';
+
+.footer {
+	position        : absolute;
+	bottom          : 0;
+	
+	width           : 100%;
+	height          : 200px;
+	padding         : 40px 15px 0 15px;
+
+	background-color: $c-footer;
+}
+
+@media (max-width: 320px) {
+	.footer {
+		height: auto;
+		padding: 34px 27px 25px 27px;
+	}
+}
+
+@media (max-width: 768px) and (min-width: 321px) {
+	.footer {
+		padding: 26px 26px 26px 26px;
+	}
+}
+
+.footer__footer-wrapper {
+	width : 100%;
+	height: auto;
+
+	overflow: hidden;
+}
+
+.social {
+	display: inline-block;
+	float  : left;
+	
+	width  : 206px;
+	height : auto;
+}
+
+@media (max-width: 320px) {
+	.social {
+		display: block;
+		float  : initial;
+		
+		width: auto;
+		
+		text-align: left;
+	}
+}
+
+@media (max-width: 768px) and (min-width: 321px) {
+	.social {
+		width: 166px;
+	}
+}
+
+.social__heading {
+	@include block_heading($fs-social__heading, $c-social__heading, $tt-social__heading, auto);
+	
+	margin-bottom: 24px;
+
+	font-weight: $fw-social__heading;
+}
+
+.social__img-row {
+	display: inline-block;
+	
+	width  : 100%;
+	height : auto;
+}
+
+@media (max-width: 320px) {
+	.social__img-row {
+		width: auto;
+	}
+}
+
+.social__img  {
+	margin-left  : 44px;
+	margin-bottom: 20px;
+}
+
+.social__img--color {
+	display: none;
+}
+
+@media (max-width: 320px) {
+	.social__img  {
+		display: none;
+
+		margin-left: 6px;
+		margin-bottom: 0;
+	}
+
+	.social__img--color  {
+		display: inline-block;
+
+		margin-bottom: 0;
+	}
+}
+
+@media (max-width: 768px) and (min-width: 321px) {
+	.social__img  {
+		margin-left: 0;
+		margin-bottom: 0;
+	}
+}
+
+
+.social__img_first-img {
+	margin-left: 0;
+}
+
+@media (max-width: 320px) {
+	.social__img_first-img {
+		margin-left: 0;
+	}
+}
+
+.social__img_last-row {
+	margin-bottom: 0;
+}
+
+.links {
+	display    : inline-block;
+	float      : left;
+	
+	width      : 110px;
+	height     : auto;
+	margin-left: 135px;
+}
+
+@media (max-width: 320px) {
+	.links {
+		display: block;
+		float  : initial;
+		
+		width: auto;
+		margin: 29px 0 0 0;
+		
+		text-align: left;
+	}
+}
+
+@media (max-width: 768px) and (min-width: 321px) {
+	.links {
+		width: 98px;
+		margin-left: 90px;
+	}
+}
+
+.links__heading {
+	@include block_heading($fs-links__heading, $c-links__heading, $tt-links__heading, auto);
+	
+	margin-bottom: 24px;
+
+	font-weight: $fw-links__heading;
+}
+
+.links__container {
+	width : 100%;
+	height: auto;
+}
+
+.success {
+	@extend .links;
+	
+	width: 120px;
+	margin-left: 241px;
+}
+
+@media (max-width: 320px) {
+	.success {
+		width: 100%;
+		margin-left: 0;
+	}
+}
+
+@media (max-width: 768px) and (min-width: 321px) {
+	.success {
+		width: 118px;
+		margin-left: 70px;
+	}
+}
+
+.success__heading {
+	@include block_heading($fs-success__heading, $c-success__heading, $tt-success__heading, auto);
+	
+	width: 100%;
+	margin-bottom: 30px;
+
+	font-weight: $fw-success__heading;
+}
+
+@media (max-width: 320px) {
+	.success__heading {
+		margin-bottom: 27px;
+	}
+}
+
+.success__container {
+	@extend .links__container;
+}
+
+.contacts {
+	@extend .links;
+	
+	margin-left: 222px;
+}
+
+@media (max-width: 320px) {
+	.contacts {
+		margin-left: 0;
+		margin-top: 34px;
+	}
+}
+
+@media (max-width: 768px) and (min-width: 321px) {
+	.contacts {
+		margin-left: 70px;
+		width: 104px;
+	}
+}
+
+.contacts__heading {
+	@include block_heading($fs-contacts__heading, $c-contacts__heading, $tt-contacts__heading, auto);
+	
+	margin-bottom: 27px;
+
+	font-weight: $fw-contacts__heading;
+}
+
+@media (max-width: 320px) {
+	.contacts__heading {
+		margin-bottom: 17px;
+	}
+}
+
+.contacts__container {
+	@extend .links__container;
+}
+
+.contacts__img-location {
+	position: absolute;
+	top: -2px;
+	left: -2px;
+}
+
+@media (max-width: 320px) {
+	.contacts__img-location {
+		display: none;
+	}
+}
+
+.contacts__img-location--mobile {
+	display: none;
+}
+
+@media (max-width: 320px) {
+	.contacts__img-location--mobile {
+		display: inline-block;
+
+		line-height: 29px;
+		vertical-align: middle;
+	}
+
+	.contacts__location-text {
+		display: inline-block;
+
+		line-height: 29px;
+		vertical-align: middle;
+	}
+}

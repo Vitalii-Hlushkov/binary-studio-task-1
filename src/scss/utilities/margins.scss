@@ -1,0 +1,19 @@
+.u-margin-left-0 {
+	margin-left: 0;
+}
+
+@media (max-width: 320px) {
+	.u-margin-left-0 {
+		margin-left: auto;
+	}
+}
+
+@media (max-width: 768px) and (min-width: 321px) {
+	.u-margin-bottom-0 {
+		margin-bottom: 0;
+	}
+
+	.u-margin-left-25px-768px {
+		margin-left: 25px;
+	}
+}

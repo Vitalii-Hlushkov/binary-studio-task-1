@@ -1,0 +1,9 @@
+.u-float-left {
+	float: left;
+}
+
+@media (max-width: 320px) {
+	.u-float-left {
+		float: initial;
+	}
+}
