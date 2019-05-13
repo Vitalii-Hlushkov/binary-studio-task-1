@@ -1,0 +1,40 @@
+.overlay {
+	display: none;
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+
+	background: $c-overlay;
+}
+
+@media (max-width: 320px) {
+	.overlay {
+		display: none;
+		position: fixed;
+		top: 40px;
+		right: 0;
+		bottom: 0;
+		left: 0;
+
+		background: rgba(84,132,187,0.6);
+	}
+}
+
+.menu-modal {
+	display: none;
+}
+
+@media (max-width: 320px) {
+	.menu-modal {
+		position: relative;
+		left: 160px;
+
+		width: 160px;
+		height: 100%;
+
+		background-color: #5484BB;
+		opacity: 1;
+	}
+}

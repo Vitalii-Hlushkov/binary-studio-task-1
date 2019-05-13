@@ -1,0 +1,16 @@
+/* @mixin box-sizing($type) {
+	-webkit-box-sizing: $type;
+	-moz-box-sizing   : $type;
+	-ms-box-sizing    : $type;
+	-o-box-sizing     : $type;
+	box-sizing        : $type;
+} */
+
+* {
+	margin            : 0;
+	padding           : 0;
+	
+	outline           : none;
+	
+	@include box-sizing(border-box);
+}

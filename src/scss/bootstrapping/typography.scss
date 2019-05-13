@@ -1,0 +1,53 @@
+/** Font families */
+$ff-body: 'HelveticaNeue-Light, sans-serif';
+
+/** Font sizes */
+$fs-header__h1-heading: 23px;
+$fs-header__h1-heading--mobile: 17px;
+$fs-header__input_type_search: 14px;
+$fs-header__nav-list-item: 12px;
+$fs-header__nav-list-item--tablet: 14px;
+$fs-img-container__header: 20px;
+$fs-social__heading: 14px;
+$fs-links__heading: 14px;
+$fs-success__heading: 14px;
+$fs-contacts__heading: 14px;
+$fs-links__goto: 11px;
+$fs-links__goto--mobile: 18px;
+$fs-footer__list-item: 11px;
+$fs-footer__list-item--mobile: 18px;
+$fs-item-info-modal__content-heading: 24px;
+$fs-item-info-modal__content-text: 16px;
+
+/** Line height */
+$lh-header: 55px;
+$lh-header--mobile: 40px;
+$lh-header__title--tablet: 60px;
+$lh-header__search: 55px;
+$lh-header__search--tablet: 60px;
+$lh-header__search-wrapper: 30px;
+$lh-header__nav: 55px;
+
+/** Font weight */
+$fw-header__h1-heading: normal;
+$fw-img-container__header: normal;
+$fw-social__heading: normal;
+$fw-links__heading: normal;
+$fw-success__heading: normal;
+$fw-contacts__heading: normal;
+
+/** Text align */
+$ta-header__search-submit: center;
+$ta-img-container__header: center;
+
+/** Text transform */
+$tt-header__nav-list-item: uppercase;
+$tt-social__heading: uppercase;
+$tt-links__heading: uppercase;
+$tt-success__heading: uppercase;
+$tt-contacts__heading: uppercase;
+
+/** Text decoration */
+$td-header__nav-list-item: none;
+$td-links__goto: none;
+$td-contacts__link: none;
