@@ -9,3 +9,5 @@ Below you find the the list of technologies and tools used to implement this pro
 * JavaScript (ES6)
 * gulp.js
 * SASS
+* Amazon S3
+* Travis CI
